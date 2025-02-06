@@ -1,3 +1,5 @@
+
+
 "use client";
 import React from 'react'
 import Pic  from '@/components/pic'
@@ -7,14 +9,26 @@ import OurInstagram from '@/components/Our-Instagram';
 import Footer from '@/components/Footer';
 
 
+
+// Access classes like
+// const sofaBed = new FurnitureModels.SofaBed(...);
+
 import SingleProduct from '@/components/SingleProducts/SingleProduct';
 import RelatedProducts from '@/components/Related Products/RelatedProducts';
 import CartSidebar from '@/components/Cart-sidebar/Cart-sidebar';
 import MyAccount from '@/components/My-Account/My-Account';
-import CheckOut    from '@/components/CheckOut/CheckOut';
- import Cart from '@/components/Cart/Cart'
+
 import Contact from'@/components/Contact/Contact'
 import Blog from '@/components/Blog/blog'
+import Product from '../app/Shop/page'
+import Shop from '@/components/Shops/shop';
+import { addToCart } from './button/button';
+import CartPage from './cart/page';
+import CheckOutPage from './checkOut/page';
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function page() {
   return (
     <div>
@@ -23,20 +37,22 @@ export default function page() {
     <TopPicker/>
     <OurBlog/>
     <OurInstagram/>
- 
+     <Shop/> 
     <Footer/>
-    <SingleProduct/>
-    <RelatedProducts/>
-    <CartSidebar/>
+    <SingleProduct/> 
+    <RelatedProducts/> 
+     <CartSidebar/>
     <MyAccount/>
-     <CheckOut/>
-     <Cart/>
+   
+    <CheckOutPage/>
+   <CartPage/>
      <Contact/>  
       <Blog />
-
-  
+     <Product/>
+     
+     <ToastContainer/>
    
 
     </div>
   )
-}
+};

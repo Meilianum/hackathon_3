@@ -104,6 +104,7 @@ export default function Header() {
 
         {/* Right Section: Contact Form */}
         <div className="flex flex-col gap-5 p-6 bg-white shadow-md rounded-lg w-full lg:max-w-[600px]">
+          <img src="/images/ana2.avif" alt="" />
           <label htmlFor="name" className="text-gray-700">
             Your Name
           </label>

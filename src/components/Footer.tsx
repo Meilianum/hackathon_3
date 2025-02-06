@@ -21,9 +21,10 @@ function Footer() {
               <nav className="list-none mb-10">
                 <li className="footer-heading pb-10">Links</li>
                 <li><Link href="/Home" className="footer-link">Home</Link></li>
-                <li><Link href="/About" className="footer-link">Shop</Link></li>
+                <li><Link href="/Shop" className="footer-link">Shop</Link></li>
                 <li><Link href="/About" className="footer-link">About</Link></li>
                 <li><Link href="/Contact" className="footer-link">Contact</Link></li>
+
               </nav>
             </div>
 
@@ -46,7 +47,8 @@ function Footer() {
                     htmlFor="footer-field"
                     className="leading-7 text-sm text-gray-600 mx-4 underline"
                   >
-                   <span> Enter your Email Addres      SUBSCRIBE </span>
+                   <span> Enter your Email Addres  -  SUBSCRIBE</span> 
+                
                    {/* <hr />
                    <span>SUBSCRIBE</span> */}
                   </label>

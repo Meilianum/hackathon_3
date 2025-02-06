@@ -1,9 +1,6 @@
 "use client";
-
-
-
 import { useEffect, useState } from 'react';
-import { fetchProducts } from '../../sanity/lib/fetchData';
+import { fetchProducts } from '../../sanity/lib/fetchData'
 
 const ProductsPage = () => {
   const [products, setProducts] = useState<any[]>([]);

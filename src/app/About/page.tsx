@@ -12,7 +12,7 @@ const About = () => {
           width={1500} 
           height={500} 
           className="rounded-lg shadow-lg"
-          objectFit="cover" 
+          style={{ objectFit: 'cover' }} 
         />
       </div>
 
@@ -22,7 +22,7 @@ const About = () => {
       <section className="bg-gray-100 p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-semibold text-gray-900 mb-6">Welcome to Our Furniture Store!</h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          At [FurnitureStoreName], we believe that your home should reflect your unique style and comfort. Our mission is to provide high-quality furniture that meets both your aesthetic and functional needs. Whether you're looking for a cozy sofa for your living room or a stylish dining table, we have everything you need to make your space feel like home.
+          At [FurnitureStoreName], we believe that your home should reflect your unique style and comfort. Our mission is to provide high-quality furniture that meets both your aesthetic and functional needs. Whether you&#39;re looking for a cozy sofa for your living room or a stylish dining table, we have everything you need to make your space feel like home.
         </p>
 
         {/* Image section for why choose us */}
@@ -44,7 +44,7 @@ const About = () => {
             <div className="w-12 h-12 bg-teal-600 rounded-full flex justify-center items-center mr-4">
               <Image src="/images/Group 17.svg" alt="Fast Delivery" width={50} height={50} />
             </div>
-            <span>🚚 <strong>Fast & Free Delivery</strong> – We ensure quick delivery right to your doorstep, so you can enjoy your new furniture sooner.</span>
+            <span>🚚 <strong>Fast &amp; Free Delivery</strong> – We ensure quick delivery right to your doorstep, so you can enjoy your new furniture sooner.</span>
           </li>
           <li className="flex items-center text-lg text-gray-700">
             <div className="w-12 h-12 bg-teal-600 rounded-full flex justify-center items-center mr-4">

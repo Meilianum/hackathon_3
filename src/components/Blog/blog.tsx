@@ -1,6 +1,5 @@
-// 
 import React from "react";
-import Link from "next/link";   
+import Link from "next/link";
 import { BiSolidUserCheck } from "react-icons/bi";
 import { FaSearch, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
@@ -13,7 +12,7 @@ export default function Blog() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex flex-grow items-center justify-between gap-4 md:gap-10">
             {/* Navigation Links */}
-            <nav className="hidden md:flex flex-wrap justify-evenly items-end text-base  gap-6 lg:gap-10">
+            <nav className="hidden md:flex flex-wrap justify-evenly items-end text-base gap-6 lg:gap-10">
               <Link href="/Shop" className="hover:text-gray-900">
                 Shop
               </Link>
@@ -35,25 +34,19 @@ export default function Blog() {
         </div>
       </header>
 
-      {/* Image Section */}
-      <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]">
-      {/* <Image
-  src="/images/Group 78.png" // Image path
-  alt="Cart"
-  width={500} // Width of the image (in pixels)
-  height={500} // Height of the image (in pixels)
-  className="object-cover" // Optional styling
-/> */}
-
-
       {/* Full Width Image Section */}
       <div className="w-full mt-5">
-        <img 
-          src="/images/Group 185 (1).png" 
-          alt="Full Width Image" 
-          className="w-full h-auto" 
+        <Image
+          src="/images/Group 185 (1).png"
+          alt="Promotional Banner"
+          width={1920} // Full width
+          height={800} // Adjusted height
+          layout="responsive"
+          className="rounded-lg"
         />
       </div>
+
+      {/* Features Section */}
       <div className="bg-[#FAF4F4] w-full py-10 m-10">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-5 text-center">
           {/* Free Delivery */}
@@ -78,8 +71,7 @@ export default function Blog() {
             </p>
           </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
   );
 }
